@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3SV Software Solutions - Internships</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-content">
+        <a href="/" class="logo">
+          <img src="3SVS.png" alt="3SV Software Solutions" class="logo-img">
+        </a>
+        
+        <!-- Desktop Navigation -->
+        <div class="nav-links">
+          <a href="#" class="nav-link">Home</a>
+          <a href="#internships" class="nav-link">Internships</a>
+          <a href="#cta" class="nav-link">About Us</a>
+          <a href="#contact" class="nav-link">Contact</a>
+          <div class="auth-buttons">
+            <button class="btn-register" onclick="redirectToForm()">Register</button>
+           
+          </div>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="mobile-menu-btn">
+          <i class="fas fa-bars" id="menu-icon"></i>
+          <i class="fas fa-times hidden" id="close-icon"></i>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <div class="mobile-nav hidden" id="mobile-nav">
+        <div class="mobile-nav-links">
+          <a href="#" class="mobile-nav-link">Home</a>
+          <a href="#internships" class="mobile-nav-link">Internships</a>
+          <a href="#cta" class="mobile-nav-link">About Us</a>
+          <a href="#contact" class="mobile-nav-link">Contact</a>
+          <div class="mobile-auth-buttons">
+            <button class="btn-register-mobile" onclick="redirectToForm()">Register</button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Hero Section with Slider -->
+  <section class="hero">
+    <div class="slider-container">
+      <div class="slider" id="hero-slider">
+        <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&h=800&q=80')">
+          <div class="slide-overlay">
+            <div class="slide-content">
+              <h1>Find Your Dream Internship at 3SV Software Solutions</h1>
+              <p>Kickstart your career with hands-on experience in cutting-edge technology</p>
+              <button class="cta-btn-hero" onclick="redirectToForm()">Apply Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&h=800&q=80')">
+          <div class="slide-overlay">
+            <div class="slide-content">
+              <h1>Learn from Industry Experts</h1>
+              <p>Get mentored by professionals with years of experience in the tech industry</p>
+              <button class="cta-btn-hero">Join Us</button>
+            </div>
+          </div>
+        </div>
+        <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&h=800&q=80')">
+          <div class="slide-overlay">
+            <div class="slide-content">
+              <h1>Build Your Professional Portfolio</h1>
+              <p>Work on real projects that will enhance your resume and skill set</p>
+              <button class="cta-btn-hero">Explore Opportunities</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="slider-controls">
+        <button class="slider-btn prev" id="prev-btn"><i class="fas fa-chevron-left"></i></button>
+        <div class="slider-dots" id="slider-dots">
+          <span class="dot active" data-index="0"></span>
+          <span class="dot" data-index="1"></span>
+          <span class="dot" data-index="2"></span>
+        </div>
+        <button class="slider-btn next" id="next-btn"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section class="categories">
+    <div class="container">
+      <h2>Explore Internship Categories</h2>
+      
+      <div class="category-grid">
+        <button class="category-card active" data-category="all">
+          <i class="fas fa-briefcase"></i>
+          <h3>All Categories</h3>
+        </button>
+        
+        <button class="category-card" data-category="Web Development">
+          <i class="fas fa-laptop-code"></i>
+          <h3>Web Development</h3>
+        </button>
+        
+        <button class="category-card" data-category="Mobile Development">
+          <i class="fas fa-mobile-alt"></i>
+          <h3>Mobile Development</h3>
+        </button>
+        
+        <button class="category-card" data-category="UI/UX Design">
+          <i class="fas fa-paint-brush"></i>
+          <h3>UI/UX Design</h3>
+        </button>
+        
+        <button class="category-card" data-category="Data Science">
+          <i class="fas fa-chart-bar"></i>
+          <h3>Data Science</h3>
+        </button>
+        
+        <button class="category-card" data-category="Marketing">
+          <i class="fas fa-bullhorn"></i>
+          <h3>Marketing</h3>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Internships Section -->
+  <section class="internships" id="internships">
+    <div class="container">
+      <div class="section-header">
+        <h2>Latest Internships</h2>
+        <a href="#" class="view-all">
+          View all <i class="fas fa-chevron-right"></i>
+        </a>
+      </div>
+      
+      <div class="internship-grid" id="internship-grid">
+        <!-- Internship cards will be inserted here by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section class="why-choose-us">
+    <div class="container">
+      <h2>Why Choose 3SV Software Solutions</h2>
+      
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-book-open"></i>
+          </div>
+          <h3>Hands-on Learning</h3>
+          <p>Work on real projects and gain practical experience that will set you apart in the industry.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-award"></i>
+          </div>
+          <h3>Mentorship</h3>
+          <p>Learn from industry experts who will guide you throughout your internship journey.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3>Networking</h3>
+          <p>Connect with professionals and fellow interns to build your professional network.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <div class="container">
+      <h2>What Our Interns Say</h2>
+      
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <img src="" alt="Intern" class="testimonial-img">
+            <div>
+              <h4>Priya Sharma</h4>
+              <p>Web Development Intern</p>
+            </div>
+          </div>
+          <p class="testimonial-text">"My internship at 3SV Software Solutions was an incredible learning experience. I got to work on real projects and improve my skills significantly."</p>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <img src="" alt="Intern" class="testimonial-img">
+            <div>
+              <h4>Rahul Patel</h4>
+              <p>Mobile App Developer Intern</p>
+            </div>
+          </div>
+          <p class="testimonial-text">"The mentorship I received during my internship was exceptional. I learned industry best practices and gained confidence in my abilities."</p>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <img src="" alt="Intern" class="testimonial-img">
+            <div>
+              <h4>Ananya Gupta</h4>
+              <p>UI/UX Design Intern</p>
+            </div>
+          </div>
+          <p class="testimonial-text">"3SV provided me with a supportive environment to grow as a designer. The feedback from senior designers helped me improve my portfolio."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta" id="cta">
+    <div class="container">
+      <h2>Ready to Start Your Career Journey?</h2>
+      <p>Join 3SV Software Solutions as an intern and gain valuable industry experience while building your professional portfolio.</p>
+      <button class="cta-btn" onclick="redirectToForm()">Apply Now</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>3SV Software Solutions</h3>
+          <p>Empowering the next generation of tech talent through meaningful internship experiences.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#internships">Internships</a></li>
+            <li><a href="#cta">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+           
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h3>Internship Categories</h3>
+          <ul class="footer-links">
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Mobile Development</a></li>
+            <li><a href="#">UI/UX Design</a></li>
+            <li><a href="#">Data Science</a></li>
+            <li><a href="#">Marketing</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col" id="contact">
+          <h3>Contact Us</h3>
+          <ul class="contact-info">
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Pune, Maharashtra, India </span>
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              <a href="tel:+919876543210">+91 9403701424</a>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:info@3svsoftware.com">3svpvtltd@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> 3SV Software Solutions PVT. LTD. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
