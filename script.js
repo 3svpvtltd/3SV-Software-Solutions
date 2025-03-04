@@ -20,7 +20,7 @@ const internships = [
       location: 'Online (Work from Home)',
       duration: '1 months',
       stipend: '₹69 (Certification Charges)',
-      skills: ['Node.js', 'Express', 'MongoDB', 'API Development'],
+      skills: ['Node.js','Python Flask', 'MongoDB', 'API Development'],
       applicationsEnding: 'Actively hiring',
       category: 'Web Development'
     },
@@ -32,7 +32,7 @@ const internships = [
       location: 'Online (Work from Home)',
       duration: '1 months',
       stipend: '₹69 (Certification Charges)',
-      skills: ['Figma', 'Adobe XD', 'UI Design', 'Wireframing'],
+      skills: ['Flask', 'Error Handling', 'OOP', 'Debugging'],
       applicationsEnding: 'Actively hiring',
       category: 'Python Developer'
     },
@@ -44,7 +44,7 @@ const internships = [
       location: 'Online (Work from Home)',
       duration: '1 months',
       stipend: '₹69 (Certification Charges)',
-      skills: ['React Native', 'Flutter', 'Mobile UI', 'API Integration'],
+      skills: ['Frontend', 'Backend', 'UI/UX Design', 'API Integration'],
       applicationsEnding: 'Actively hiring',
       category: 'Web Development'
     },
@@ -56,7 +56,7 @@ const internships = [
       location: 'Online (Work from Home)',
       duration: '1 months',
       stipend: '₹69 (Certification Charges)',
-      skills: ['Python', 'Machine Learning', 'Data Analysis', 'SQL'],
+      skills: ['Python', 'PowerBI/ Tableau', 'Data Analysis', 'SQL'],
       applicationsEnding: 'Applications ending in 6 days',
       category: 'Data Analyst'
     },
@@ -68,7 +68,7 @@ const internships = [
       location: 'Online (Work from Home)',
       duration: '1 months',
       stipend: '₹69 (Certification Charges)',
-      skills: ['Social Media Marketing', 'SEO', 'Content Creation', 'Analytics'],
+      skills: ['Prompt Design', 'Clearing Instruction', 'Linguistic Proficiency', 'Analytics of Prompt Structure'],
       applicationsEnding: 'Actively hiring',
       category: 'AI Prompt'
     }
