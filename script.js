@@ -9,7 +9,7 @@ const internships = [
       duration: '1 months',
       stipend: '₹69 (Certification Charges)',
       skills: ['React', 'JavaScript', 'HTML', 'CSS'],
-      applicationsEnding: 'Closed',
+      applicationsEnding: 'Actively hiring',
       category: 'Web Development'
     },
     {
@@ -21,7 +21,7 @@ const internships = [
       duration: '1 months',
       stipend: '₹69 (Certification Charges)',
       skills: ['Node.js','Python Flask', 'MongoDB', 'API Development'],
-      applicationsEnding: 'Closed',
+      applicationsEnding: 'Actively hiring',
       category: 'Web Development'
     },
     {
@@ -33,7 +33,7 @@ const internships = [
       duration: '1 months',
       stipend: '₹69 (Certification Charges)',
       skills: ['Flask', 'Error Handling', 'OOP', 'Debugging'],
-      applicationsEnding: 'Closed',
+      applicationsEnding: 'Actively hiring',
       category: 'Python Developer'
     },
     {
@@ -45,7 +45,7 @@ const internships = [
       duration: '1 months',
       stipend: '₹69 (Certification Charges)',
       skills: ['Frontend', 'Backend', 'UI/UX Design', 'API Integration'],
-      applicationsEnding: 'Closed',
+      applicationsEnding: 'Actively hiring',
       category: 'Web Development'
     },
     {
@@ -57,7 +57,7 @@ const internships = [
       duration: '1 months',
       stipend: '₹69 (Certification Charges)',
       skills: ['Python', 'PowerBI/ Tableau', 'Data Analysis', 'SQL'],
-      applicationsEnding: 'Closed',
+      applicationsEnding: 'Actively hiring',
       category: 'Data Analyst'
     },
     {
@@ -69,7 +69,7 @@ const internships = [
       duration: '1 months',
       stipend: '₹69 (Certification Charges)',
       skills: ['Prompt Design', 'Clearing Instruction', 'Linguistic Proficiency', 'Analytics of Prompt Structure'],
-      applicationsEnding: 'Closed',
+      applicationsEnding: 'Actively hiring',
       category: 'AI Prompt'
     }
   ];
