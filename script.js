@@ -7,7 +7,7 @@ const internships = [
       logo: 'https://images.unsplash.com/photo-1549923746-c502d488b3ea?ixlib=rb-1.2.1&auto=format&fit=crop&w=120&h=120&q=80',
       location: 'Online (Work from Home)',
       duration: '1 months',
-      stipend: '₹69 (Certification Charges)',
+      stipend: '₹99 (Certification Charges)',
       skills: ['React', 'JavaScript', 'HTML', 'CSS'],
       applicationsEnding: 'Actively hiring',
       category: 'Web Development'
@@ -19,7 +19,7 @@ const internships = [
       logo: 'https://images.unsplash.com/photo-1549923746-c502d488b3ea?ixlib=rb-1.2.1&auto=format&fit=crop&w=120&h=120&q=80',
       location: 'Online (Work from Home)',
       duration: '1 months',
-      stipend: '₹69 (Certification Charges)',
+      stipend: '₹99 (Certification Charges)',
       skills: ['Node.js','Python Flask', 'MongoDB', 'API Development'],
       applicationsEnding: 'Actively hiring',
       category: 'Web Development'
@@ -31,7 +31,7 @@ const internships = [
       logo: 'https://images.unsplash.com/photo-1549923746-c502d488b3ea?ixlib=rb-1.2.1&auto=format&fit=crop&w=120&h=120&q=80',
       location: 'Online (Work from Home)',
       duration: '1 months',
-      stipend: '₹69 (Certification Charges)',
+      stipend: '₹99 (Certification Charges)',
       skills: ['Flask', 'Error Handling', 'OOP', 'Debugging'],
       applicationsEnding: 'Actively hiring',
       category: 'Python Developer'
@@ -43,7 +43,7 @@ const internships = [
       logo: 'https://images.unsplash.com/photo-1549923746-c502d488b3ea?ixlib=rb-1.2.1&auto=format&fit=crop&w=120&h=120&q=80',
       location: 'Online (Work from Home)',
       duration: '1 months',
-      stipend: '₹69 (Certification Charges)',
+      stipend: '₹99 (Certification Charges)',
       skills: ['Frontend', 'Backend', 'UI/UX Design', 'API Integration'],
       applicationsEnding: 'Actively hiring',
       category: 'Web Development'
@@ -55,7 +55,7 @@ const internships = [
       logo: 'https://images.unsplash.com/photo-1549923746-c502d488b3ea?ixlib=rb-1.2.1&auto=format&fit=crop&w=120&h=120&q=80',
       location: 'Online (Work from Home)',
       duration: '1 months',
-      stipend: '₹69 (Certification Charges)',
+      stipend: '₹99 (Certification Charges)',
       skills: ['Python', 'PowerBI/ Tableau', 'Data Analysis', 'SQL'],
       applicationsEnding: 'Actively hiring',
       category: 'Data Analyst'
@@ -67,7 +67,7 @@ const internships = [
       logo: 'https://images.unsplash.com/photo-1549923746-c502d488b3ea?ixlib=rb-1.2.1&auto=format&fit=crop&w=120&h=120&q=80',
       location: 'Online (Work from Home)',
       duration: '1 months',
-      stipend: '₹69 (Certification Charges)',
+      stipend: '₹99 (Certification Charges)',
       skills: ['Prompt Design', 'Clearing Instruction', 'Linguistic Proficiency', 'Analytics of Prompt Structure'],
       applicationsEnding: 'Actively hiring',
       category: 'AI Prompt'
