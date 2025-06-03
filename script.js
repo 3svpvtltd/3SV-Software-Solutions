@@ -281,5 +281,5 @@ const internships = [
 
   //form link 
   function redirectToForm() {
-    window.location.href = "https://forms.gle/CnRcL3R3DvVcmCfE6"; // Your Google Form link
+    window.location.href = "https://forms.gle/hATnqRx2ZxYMjhaS9"; // Your Google Form link
 }
