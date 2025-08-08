@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3SV Software Solutions - Internship Program</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+    <img src="logo.png" alt="3SV Software Solutions Logo" class="brand-logo">
+</div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#internships" class="nav-link">Internships</a>
+                <a href="job-veri.html" class="nav-link">Jobs</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="https://3svpvtltd.github.io/Certificate-Verification/" class="nav-link">Certificate Verification</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <button class="btn-apply" data-position="apply">Apply Now</button>
+
+
+                 <script>
+  // Wait for the DOM to load
+  document.addEventListener("DOMContentLoaded", function () {
+    // Get all buttons with the class 'btn-apply-card'
+    const buttons = document.querySelectorAll(".btn-apply");
+
+    // Map positions to Google Form URLs
+    const formLinks = {
+      "apply": "https://forms.gle/hATnqRx2ZxYMjhaS9",
+      
+      // Add more if needed
+    };
+
+    // Add click event listener to each button
+    buttons.forEach(button => {
+      button.addEventListener("click", function () {
+        const position = this.getAttribute("data-position");
+        const url = formLinks[position];
+
+        if (url) {
+          window.open(url, "_blank");
+        } else {
+          alert("No form available for this position.");
+        }
+      });
+    });
+  });
+</script>
+
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+     <!-- Hero Section -->
+   <section class="hero" style="background-image: url('spark1.jpg'); background-size:60%; background-position: right; background-repeat: no-repeat; padding: 100px 0; color: white;">
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="hero-title">WelCome to 3SV Software Solutions</h1>
+        <p class="hero-subtitle">Your trusted partner for innovative software development and IT solutions</p>
+        <p class="hero-description">
+         
+        </p>
+        <div class="hero-buttons">
+          <a href="https://forms.gle/hATnqRx2ZxYMjhaS9" class="btn btn-primary">Apply Now</a>
+          <a href="https://3svpvtltd.github.io/Certificate-Verification/" class="btn btn-secondary">Certificate Verification</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Features Section -->
+<section class="features">
+  <div class="features-left">
+    <h1>Welcome to<br>3SV Software Solutions</h1>
+  </div>
+
+  <div class="features-right">
+    <h2 class="section-title">Key Features</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" color=" #3B82F6">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+          </svg>
+        
+        <h3 class="feature-title">Real-Time Projects</h3>
+        <p class="feature-description">
+          Work on industry-relevent projectsthat boost your skills and resume.
+        </p>
+      </div>
+
+      <div class="feature-card">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" color=" #3B82F6">
+            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+            <path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path>
+          </svg>
+        
+        <h3 class="feature-title">Hands-on Experience</h3>
+        <p class="feature-description">
+          Learn through doing - guided by industry Experts from 3SV Software Solutions.
+        </p>
+      </div>
+
+      <div class="feature-card">
+    
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" color=" #3B82F6">
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M12 1v6m0 6v6m11-7h-6m-6 0H1"></path>
+          </svg>
+
+        <h3 class="feature-title">Opportunity to Work with 3SV</h3>
+        <p class="feature-description">
+          Top-performing interns may recive offer Letters and Joining Letter from us.
+        </p>
+      </div>
+
+      <div class="feature-card">
+    
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" color=" #3B82F6">
+            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+            <polyline points="3.27,6.96 12,12.01 20.73,6.96"></polyline>
+            <line x1="12" y1="22.08" x2="12" y2="12"></line>
+          </svg>
+    
+        <h3 class="feature-title">Value-Added Certificate</h3>
+        <p class="feature-description">
+          On completion, recive a certificate recognized across the industry.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Internship Positions -->
+    <section id="internships" class="internships">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Available Internship Positions</h2>
+                <p class="section-description">Choose from our diverse range of internship opportunities</p>
+            </div>
+            <div class="internship-grid">
+                <div class="internship-card">
+                    <div class="card-header">
+                        <i class="fab fa-react card-icon"></i>
+                        <div class="card-tags">
+                            <span class="tag tag-hot">Hot</span>
+                        
+                        </div>
+                    </div>
+                    <h3 class="card-title">Frontend Development</h3>
+                    <p class="card-description">Work with React, JavaScript, and modern frontend technologies to build stunning user interfaces.</p>
+                    <div class="card-details">
+                        <div class="detail">
+                            <i class="fas fa-clock"></i>
+                            <span>1-3 months</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-rupee-sign"></i>
+                            <span>₹99/Month (Certification Charges)</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Remote</span>
+                        </div>
+                    </div>
+                    <div class="card-skills">
+                        <span class="skill">React</span>
+                        <span class="skill">JavaScript</span>
+                        <span class="skill">CSS</span>
+                        <span class="skill">HTML</span>
+                    </div>
+                    <button class="btn-apply-card" data-position="apply">Apply Now</button>
+
+                    
+                </div>
+
+                <div class="internship-card">
+                    <div class="card-header">
+                        <i class="fab fa-python card-icon"></i>
+                        <div class="card-tags">
+                            <span class="tag tag-new">New</span>
+                        </div>
+                    </div>
+                    <h3 class="card-title">Backend Development</h3>
+                    <p class="card-description">Build robust server-side applications using Python, Node.js, and database technologies.</p>
+                    <div class="card-details">
+                        <div class="detail">
+                            <i class="fas fa-clock"></i>
+                            <span>1-3 months</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-rupee-sign"></i>
+                            <span>₹99/Month (Certification Charges)</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Remote</span>
+                        </div>
+                    </div>
+                    <div class="card-skills">
+                        <span class="skill">Python</span>
+                        <span class="skill">Node.js</span>
+                        <span class="skill">MongoDB</span>
+                        <span class="skill">API</span>
+                    </div>
+                   <button class="btn-apply-card" data-position="apply">Apply Now</button>
+
+                </div>
+
+                <div class="internship-card">
+                    <div class="card-header">
+                        <i class="fas fa-mobile-alt card-icon"></i>
+                        <div class="card-tags">
+                            <span class="tag tag-trending">Trending</span>
+                        </div>
+                    </div>
+                    <h3 class="card-title">Python Developer</h3>
+                    <p class="card-description">A Python developer internship is an opportunity to work on real-world projects that involve Python programming</p>
+                    <div class="card-details">
+                        <div class="detail">
+                            <i class="fas fa-clock"></i>
+                            <span>1-3 months</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-rupee-sign"></i>
+                            <span>₹99/Month (Certification Charges)</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Remote</span>
+                        </div>
+                    </div>
+                    <div class="card-skills">
+                        <span class="skill">Flask</span>
+                        <span class="skill">Pandas</span>
+                        <span class="skill">SeaBorn</span>
+                        <span class="skill">MySQL Connector</span>
+                    </div>
+                   <button class="btn-apply-card" data-position="apply">Apply Now</button>
+
+                </div>
+
+                <div class="internship-card">
+                    <div class="card-header">
+                        <i class="fas fa-chart-line card-icon"></i>
+                        <div class="card-tags">
+                            <span class="tag tag-hot">Hot</span>
+                        </div>
+                    </div>
+                    <h3 class="card-title">Data Science & Analytics</h3>
+                    <p class="card-description">Analyze data, build machine learning models, and create insightful visualizations.</p>
+                    <div class="card-details">
+                        <div class="detail">
+                            <i class="fas fa-clock"></i>
+                            <span>1-3 months</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-rupee-sign"></i>
+                            <span>₹99/Month (Certification Charges)</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Remote</span>
+                        </div>
+                    </div>
+                    <div class="card-skills">
+                        <span class="skill">Python</span>
+                        <span class="skill">ML</span>
+                        <span class="skill">Pandas</span>
+                        <span class="skill">SQL</span>
+                    </div>
+                   <button class="btn-apply-card" data-position="apply">Apply Now</button>
+
+                </div>
+
+                <div class="internship-card">
+                    <div class="card-header">
+                        <i class="fas fa-shield-alt card-icon"></i>
+                        <div class="card-tags">
+                            <span class="tag tag-new">New</span>
+                        </div>
+                    </div>
+                    <h3 class="card-title">AI Prompt Engineer</h3>
+                    <p class="card-description">A Prompt Engineer internship focuses on designing, testing, and optimizing prompts for AI models like ChatGPT, Claude, Gemini, or other LLMs (Large Language Models).</p>
+                    <div class="card-details">
+                        <div class="detail">
+                            <i class="fas fa-clock"></i>
+                            <span>1-3 months</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-rupee-sign"></i>
+                            <span>₹99/Month (Certification Charges)</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Remote</span>
+                        </div>
+                    </div>
+                    <div class="card-skills">
+                        <span class="skill">Technical Skills</span>
+                        <span class="skill">Prompt Skills</span>
+                        <span class="skill">Domain Knowledge</span>
+                        
+                    </div>
+                   <button class="btn-apply-card" data-position="apply">Apply Now</button>
+
+                </div>
+
+                <div class="internship-card">
+                    <div class="card-header">
+                        <i class="fas fa-paint-brush card-icon"></i>
+                        <div class="card-tags">
+                            <span class="tag tag-trending">Trending</span>
+                        </div>
+                    </div>
+                    <h3 class="card-title">UI/UX Design</h3>
+                    <p class="card-description">Design beautiful and user-friendly interfaces for web and mobile applications.</p>
+                    <div class="card-details">
+                        <div class="detail">
+                            <i class="fas fa-clock"></i>
+                            <span>1-3 months</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-rupee-sign"></i>
+                            <span>₹99/Month (Certification Charges)</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Remote</span>
+                        </div>
+                    </div>
+                    <div class="card-skills">
+                        <span class="skill">Figma</span>
+                        <span class="skill">Adobe XD</span>
+                        <span class="skill">Prototyping</span>
+                        <span class="skill">User Research</span>
+                    </div>
+                    <button class="btn-apply-card" data-position="apply">Apply Now</button>
+
+                </div>
+
+                 <div class="internship-card">
+                    <div class="card-header">
+                        <i class="fas fa-shield-alt card-icon"></i>
+                        <div class="card-tags">
+                            <span class="tag tag-new">New</span>
+                        </div>
+                    </div>
+                    <h3 class="card-title">Generative AI</h3>
+                    <p class="card-description">A Generative AI internship involves creating, training, and deploying AI models that can generate new content such as text, images, audio, or code.</p>
+                    <div class="card-details">
+                        <div class="detail">
+                            <i class="fas fa-clock"></i>
+                            <span>1-3 months</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-rupee-sign"></i>
+                            <span>₹99/Month (Certification Charges)</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Remote</span>
+                        </div>
+                    </div>
+                    <div class="card-skills">
+                        <span class="skill">Core AI & Machine Learning Basics</span>
+                        <span class="skill">Generative AI Tools & Frameworks</span>
+                        <span class="skill">Programming Skills</span>
+                        <span class="skill">Data Handling</span>
+                    </div>
+                   <button class="btn-apply-card" data-position="apply">Apply Now</button>
+
+                </div> <div class="internship-card">
+                    <div class="card-header">
+                        <i class="fas fa-shield-alt card-icon"></i>
+                        <div class="card-tags">
+                            <span class="tag tag-new">New</span>
+                        </div>
+                    </div>
+                    <h3 class="card-title">Graphic Designing</h3>
+                    <p class="card-description">A graphic designing internship focuses on creating visual content for brands, products, or campaigns.</p>
+                    <div class="card-details">
+                        <div class="detail">
+                            <i class="fas fa-clock"></i>
+                            <span>1-3 months</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-rupee-sign"></i>
+                            <span>₹99/Month (Certification Charges)</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Remote</span>
+                        </div>
+                    </div>
+                    <div class="card-skills">
+                        <span class="skill">Design Software Skills</span>
+                        <span class="skill">Design Fundamentals</span>
+                        <span class="skill">Creativity & Problem Solving</span>
+                        <span class="skill">Technical Skills</span>
+                    </div>
+                    <button class="btn-apply-card" data-position="apply">Apply Now</button>
+
+                </div>
+
+                
+                <div class="internship-card">
+                    <div class="card-header">
+                        <i class="fas fa-paint-brush card-icon"></i>
+                        <div class="card-tags">
+                            <span class="tag tag-trending">Trending</span>
+                        </div>
+                    </div>
+                    <h3 class="card-title">Data Engineer</h3>
+                    <p class="card-description">A Data Engineer internship focuses on building, maintaining, and optimizing data pipelines and infrastructure so that organizations can store, process, and analyze data efficiently.</p>
+                    <div class="card-details">
+                        <div class="detail">
+                            <i class="fas fa-clock"></i>
+                            <span>1-3 months</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-rupee-sign"></i>
+                            <span>₹99/Month (Certification Charges)</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Remote</span>
+                        </div>
+                    </div>
+                    <div class="card-skills">
+                        <span class="skill">Programming Skills</span>
+                        <span class="skill">Databases</span>
+                        <span class="skill">Data Pipelines & Big Data Tools</span>
+                        <span class="skill">Cloud Platforms</span>
+                    </div>
+                    <button class="btn-apply-card" data-position="apply">Apply Now</button>
+
+                </div>
+
+            </div>
+        </div>
+      <script>
+  // Wait for the DOM to load
+  document.addEventListener("DOMContentLoaded", function () {
+    // Get all buttons with the class 'btn-apply-card'
+    const buttons = document.querySelectorAll(".btn-apply-card");
+
+    // Map positions to Google Form URLs
+    const formLinks = {
+      "apply": "https://forms.gle/hATnqRx2ZxYMjhaS9",
+      
+      // Add more if needed
+    };
+
+    // Add click event listener to each button
+    buttons.forEach(button => {
+      button.addEventListener("click", function () {
+        const position = this.getAttribute("data-position");
+        const url = formLinks[position];
+
+        if (url) {
+          window.open(url, "_blank");
+        } else {
+          alert("No form available for this position.");
+        }
+      });
+    });
+  });
+</script>
+
+    </section>
+
+
+    <!-- Internship Tasks Section -->
+<section class="internship-tasks">
+  <div class="container">
+    <h2>Internship Tasks</h2>
+    <p class="section-description">Download your domain-specific tasks and start your learning journey</p>
+    
+    <div class="tasks-grid">
+      <!-- Web Development Tasks -->
+      <div class="task-card">
+        <div class="task-icon">
+          <i class="fas fa-laptop-code"></i>
+        </div>
+        <h3>Web Development</h3>
+        <ul class="task-list">
+          <li>
+            <span>Task 1: Frontend Development</span>
+            <button class="download-btn" data-file="webdev.pdf">
+              <i class="fas fa-download"></i>
+            </button>
+          </li>
+          <li>
+            <span>Task 2: Backend Development</span>
+            <button class="download-btn" data-file="pdfs/backend.pdf">
+              <i class="fas fa-download"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Mobile Development Tasks -->
+      <div class="task-card">
+        <div class="task-icon">
+          <i class="fas fa-mobile-alt"></i>
+        </div>
+        <h3>Mobile Development</h3>
+        <ul class="task-list">
+          <li>
+            <span>Task 1: Mobile UI Development</span>
+            <button class="download-btn" data-file="pdfs/mobile-ui.pdf">
+              <i class="fas fa-download"></i>
+            </button>
+          </li>
+          <li>
+            <span>Task 2: App Development</span>
+            <button class="download-btn" data-file="pdfs/app-dev.pdf">
+              <i class="fas fa-download"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <!-- UI/UX Design Tasks -->
+      <div class="task-card">
+        <div class="task-icon">
+          <i class="fas fa-paint-brush"></i>
+        </div>
+        <h3>UI/UX Design</h3>
+        <ul class="task-list">
+          <li>
+            <span>Task 1: User Interface Design</span>
+            <button class="download-btn" data-file="pdfs/ui-design.pdf">
+              <i class="fas fa-download"></i>
+            </button>
+          </li>
+          <li>
+            <span>Task 2: User Experience Research</span>
+            <button class="download-btn" data-file="pdfs/ux-research.pdf">
+              <i class="fas fa-download"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Data Science Tasks -->
+      <div class="task-card">
+        <div class="task-icon">
+          <i class="fas fa-chart-bar"></i>
+        </div>
+        <h3>Data Science</h3>
+        <ul class="task-list">
+          <li>
+            <span>Task 1: Data Analysis</span>
+            <button class="download-btn" data-file="pdfs/data-analysis.pdf">
+              <i class="fas fa-download"></i>
+            </button>
+          </li>
+          <li>
+            <span>Task 2: Machine Learning</span>
+            <button class="download-btn" data-file="pdfs/machine-learning.pdf">
+              <i class="fas fa-download"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Marketing Tasks -->
+      <div class="task-card">
+        <div class="task-icon">
+          <i class="fas fa-bullhorn"></i>
+        </div>
+        <h3>Marketing</h3>
+        <ul class="task-list">
+          <li>
+            <span>Task 1: Digital Marketing</span>
+            <button class="download-btn" data-file="pdfs/digital-marketing.pdf">
+              <i class="fas fa-download"></i>
+            </button>
+          </li>
+          <li>
+            <span>Task 2: Content Strategy</span>
+            <button class="download-btn" data-file="pdfs/content-strategy.pdf">
+              <i class="fas fa-download"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.querySelectorAll('.download-btn').forEach(button => {
+    button.addEventListener('click', function() {
+      const fileUrl = this.getAttribute('data-file');
+      const link = document.createElement('a');
+      link.href = fileUrl;
+      link.setAttribute('download', '');
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    });
+  });
+</script>
+
+
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About 3SV Software Solutions</h2>
+                    <p class="about-description">
+                        At 3SV Software Solutions, we are passionate about turning ideas into powerful digital solutions.
+Founded with the vision to deliver innovative, scalable, and efficient software services, we specialize in web development, mobile app development, AI-based solutions, and enterprise software systems.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-award feature-icon"></i>
+                            <div class="feature-content">
+                                <h4>Industry Recognition</h4>
+                                <p>Awarded "Best IT Training Company" for 3 consecutive years</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-users feature-icon"></i>
+                            <div class="feature-content">
+                                <h4>Expert Mentorship</h4>
+                                <p>Learn from industry veterans with 10+ years of experience</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-briefcase feature-icon"></i>
+                            <div class="feature-content">
+                                <h4>Job Placement</h4>
+                                <p>95% of our interns get placed in top tech companies</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-project-diagram feature-icon"></i>
+                            <div class="feature-content">
+                                <h4>Real Projects</h4>
+                                <p>Work on live client projects and build your portfolio</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               <div class="about-image">
+    <div class="image-placeholder" style="text-align:center;">
+        <img src="3SV300logo.png" alt="3SV Software Solutions Office" 
+             style="width:100%; max-width:370px; background:white; padding:10px; border-radius:8px;">
+    </div>
+</div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Application Process</h2>
+                <p class="section-description">Simple 4-step process to join our internship program</p>
+            </div>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Apply Online</h3>
+                        <p>Fill out our comprehensive application form with your details and preferences</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Technical Assessment</h3>
+                        <p>Complete our online technical test tailored to your chosen domain</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Interview Round</h3>
+                        <p>Face-to-face or virtual interview with our technical team</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Welcome Aboard</h3>
+                        <p>Get onboarded and start your exciting internship journey with us</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ <section class="testimonial-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Interns Say</h2>
+                <p class="section-subtitle">Discover the experiences and growth stories from our talented interns</p>
+            </div>
+            
+            <div class="slider-container">
+                <div class="slider-wrapper">
+                    <div class="slides-container">
+                        <!-- Slide 1 -->
+                        <div class="slide active">
+                            <div class="testimonial-card">
+                                <div class="intern-avatar">
+                                    <img src="khushi.jpeg" alt="khushi Mandlik">
+                                </div>
+                                <div class="intern-details">
+                                    <h4 class="intern-name">khushi Mandlik</h4>
+                                    <p class="intern-position">Web Development Intern</p>
+                                    <p class="intern-university"></p>
+                                </div>
+                                <div class="testimonial-content">
+                                    <p class="testimonial-text">
+                                        Currently I am doing my internship in 3SV Software Solutions and my experience is very nice team members are very kind and supportive it is definitely increasing my confidence and skills.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="slide">
+                            <div class="testimonial-card">
+                                <div class="intern-avatar">
+                                    <img src="chaitali.jpg" alt="Wavdhane Chaitali Dattatray">
+                                </div>
+                                <div class="intern-details">
+                                    <h4 class="intern-name">Wavdhane Chaitali Dattatray</h4>
+                                    <p class="intern-position">Python Developer Intern</p>
+                                    <p class="intern-university">NVP ACS College</p>
+                                </div>
+                                <div class="testimonial-content">
+                                    <p class="testimonial-text">
+                                        Overall, this internship was a great learning experience and helped boost my confidence in writing Python code for real-world applications.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="slide">
+                            <div class="testimonial-card">
+                                <div class="intern-avatar">
+                                    <img src="sumit.jpg" alt="Sumit Jadhav">
+                                </div>
+                                <div class="intern-details">
+                                    <h4 class="intern-name">Sumit jadhav</h4>
+                                    <p class="intern-position">Generative AI Engineer Intern</p>
+                                    <p class="intern-university">Sandip University</p>
+                                </div>
+                                <div class="testimonial-content">
+                                    <p class="testimonial-text">
+                                        "I couldn't have asked for a better first internship experience. The company culture is amazing, and I felt like a valued team member from day one. The skills I learned here have given me confidence for my career ahead."
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 4 -->
+                        <div class="slide">
+                            <div class="testimonial-card">
+                                <div class="intern-avatar">
+                                    <img src="vaibhav.jpg" alt="Vaibhav">
+                                </div>
+                                <div class="intern-details">
+                                    <h4 class="intern-name">Vaibhav</h4>
+                                    <p class="intern-position">AI Prompt Engineer</p>
+                                    <p class="intern-university">Sandip University</p>
+                                </div>
+                                <div class="testimonial-content">
+                                    <p class="testimonial-text">
+                                        "Working here as an intern was like joining a family. Everyone was so supportive and willing to help. I learned more in 3 months than I did in an entire semester. The real-world experience is invaluable!"
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 5 -->
+                        <div class="slide">
+                            <div class="testimonial-card">
+                                <div class="intern-avatar">
+                                    <img src="sameer.jpg" alt="Sameer Pawar">
+                                </div>
+                                <div class="intern-details">
+                                    <h4 class="intern-name">Sameer Pawar</h4>
+                                    <p class="intern-position">Data Engineer Intern</p>
+                                    <p class="intern-university">Sandip University</p>
+                                </div>
+                                <div class="testimonial-content">
+                                    <p class="testimonial-text">
+                                        "This internship gave me the perfect blend of challenge and support. I worked on meaningful projects that impacted the business, and my contributions were recognized and appreciated. It's been an incredible journey of growth!"
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Controls -->
+                <div class="slider-controls">
+                    <button class="nav-btn prev-btn" aria-label="Previous testimonial">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="15,18 9,12 15,6"></polyline>
+                        </svg>
+                    </button>
+                    <button class="nav-btn next-btn" aria-label="Next testimonial">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9,18 15,12 9,6"></polyline>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Dot Indicators -->
+                <div class="dots-container">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                    <span class="dot" data-slide="3"></span>
+                    <span class="dot" data-slide="4"></span>
+                </div>
+            </div>
+        </div>
+        <script>
+            // Professional Internship Testimonial Slider
+class TestimonialSlider {
+    constructor() {
+        this.currentSlide = 0;
+        this.slides = document.querySelectorAll('.slide');
+        this.dots = document.querySelectorAll('.dot');
+        this.nextBtn = document.querySelector('.next-btn');
+        this.prevBtn = document.querySelector('.prev-btn');
+        this.sliderContainer = document.querySelector('.slider-container');
+        this.totalSlides = this.slides.length;
+        this.autoSlideInterval = null;
+        this.autoSlideDelay = 5000; // 5 seconds
+        this.isTransitioning = false;
+
+        this.init();
+    }
+
+    init() {
+        if (this.totalSlides === 0) return;
+
+        this.setupEventListeners();
+        this.startAutoSlide();
+        
+        // Initialize first slide
+        this.showSlide(0);
+        
+        // Preload images for better performance
+        this.preloadImages();
+    }
+
+    setupEventListeners() {
+        // Navigation buttons
+        this.nextBtn?.addEventListener('click', () => this.handleNavigation('next'));
+        this.prevBtn?.addEventListener('click', () => this.handleNavigation('prev'));
+
+        // Dot navigation
+        this.dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => this.handleNavigation('dot', index));
+            
+            // Keyboard navigation for dots
+            dot.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    this.handleNavigation('dot', index);
+                }
+            });
+            
+            // Make dots focusable
+            dot.setAttribute('tabindex', '0');
+            dot.setAttribute('role', 'button');
+            dot.setAttribute('aria-label', `Go to testimonial ${index + 1}`);
+        });
+
+        // Pause on hover
+        this.sliderContainer?.addEventListener('mouseenter', () => this.stopAutoSlide());
+        this.sliderContainer?.addEventListener('mouseleave', () => this.startAutoSlide());
+
+        // Pause on focus (for accessibility)
+        this.sliderContainer?.addEventListener('focusin', () => this.stopAutoSlide());
+        this.sliderContainer?.addEventListener('focusout', () => this.startAutoSlide());
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => this.handleKeyboardNavigation(e));
+
+        // Touch/swipe support
+        this.setupTouchControls();
+
+        // Pause when tab is not visible
+        document.addEventListener('visibilitychange', () => {
+            if (document.hidden) {
+                this.stopAutoSlide();
+            } else {
+                this.startAutoSlide();
+            }
+        });
+    }
+
+    setupTouchControls() {
+        let startX = null;
+        let startTime = null;
+        const minSwipeDistance = 50;
+        const maxSwipeTime = 300;
+
+        this.sliderContainer?.addEventListener('touchstart', (e) => {
+            startX = e.touches[0].clientX;
+            startTime = new Date().getTime();
+        }, { passive: true });
+
+        this.sliderContainer?.addEventListener('touchend', (e) => {
+            if (!startX || !startTime) return;
+
+            const endX = e.changedTouches[0].clientX;
+            const endTime = new Date().getTime();
+            const distance = startX - endX;
+            const duration = endTime - startTime;
+
+            if (Math.abs(distance) >= minSwipeDistance && duration <= maxSwipeTime) {
+                if (distance > 0) {
+                    this.handleNavigation('next');
+                } else {
+                    this.handleNavigation('prev');
+                }
+            }
+
+            startX = null;
+            startTime = null;
+        }, { passive: true });
+    }
+
+    handleNavigation(direction, index = null) {
+        if (this.isTransitioning) return;
+
+        this.stopAutoSlide();
+
+        switch (direction) {
+            case 'next':
+                this.nextSlide();
+                break;
+            case 'prev':
+                this.prevSlide();
+                break;
+            case 'dot':
+                if (index !== null && index !== this.currentSlide) {
+                    this.showSlide(index);
+                }
+                break;
+        }
+
+        this.startAutoSlide();
+    }
+
+    handleKeyboardNavigation(e) {
+        if (!this.sliderContainer?.contains(document.activeElement)) return;
+
+        switch (e.key) {
+            case 'ArrowRight':
+            case 'ArrowDown':
+                e.preventDefault();
+                this.handleNavigation('next');
+                break;
+            case 'ArrowLeft':
+            case 'ArrowUp':
+                e.preventDefault();
+                this.handleNavigation('prev');
+                break;
+            case 'Home':
+                e.preventDefault();
+                this.handleNavigation('dot', 0);
+                break;
+            case 'End':
+                e.preventDefault();
+                this.handleNavigation('dot', this.totalSlides - 1);
+                break;
+        }
+    }
+
+    showSlide(index, direction = 'next') {
+        if (index === this.currentSlide || this.isTransitioning) return;
+
+        this.isTransitioning = true;
+
+        // Remove active class from current slide and dot
+        this.slides[this.currentSlide]?.classList.remove('active');
+        this.dots[this.currentSlide]?.classList.remove('active');
+        this.dots[this.currentSlide]?.setAttribute('aria-selected', 'false');
+
+        // Update current slide
+        this.currentSlide = index;
+
+        // Add active class to new slide and dot with a slight delay for smooth transition
+        setTimeout(() => {
+            this.slides[this.currentSlide]?.classList.add('active');
+            this.dots[this.currentSlide]?.classList.add('active');
+            this.dots[this.currentSlide]?.setAttribute('aria-selected', 'true');
+            
+            // Update ARIA live region for screen readers
+            this.announceSlideChange();
+            
+            this.isTransitioning = false;
+        }, 50);
+    }
+
+    nextSlide() {
+        const nextIndex = (this.currentSlide + 1) % this.totalSlides;
+        this.showSlide(nextIndex, 'next');
+    }
+
+    prevSlide() {
+        const prevIndex = (this.currentSlide - 1 + this.totalSlides) % this.totalSlides;
+        this.showSlide(prevIndex, 'prev');
+    }
+
+    startAutoSlide() {
+        this.stopAutoSlide();
+        if (this.totalSlides > 1) {
+            this.autoSlideInterval = setInterval(() => {
+                this.nextSlide();
+            }, this.autoSlideDelay);
+        }
+    }
+
+    stopAutoSlide() {
+        if (this.autoSlideInterval) {
+            clearInterval(this.autoSlideInterval);
+            this.autoSlideInterval = null;
+        }
+    }
+
+    preloadImages() {
+        this.slides.forEach(slide => {
+            const img = slide.querySelector('img');
+            if (img && !img.complete) {
+                img.addEventListener('load', () => {
+                    img.style.opacity = '1';
+                });
+                img.style.opacity = '0';
+                img.style.transition = 'opacity 0.3s ease';
+            }
+        });
+    }
+
+    announceSlideChange() {
+        // Create or update ARIA live region for screen readers
+        let liveRegion = document.getElementById('slider-live-region');
+        if (!liveRegion) {
+            liveRegion = document.createElement('div');
+            liveRegion.id = 'slider-live-region';
+            liveRegion.setAttribute('aria-live', 'polite');
+            liveRegion.setAttribute('aria-atomic', 'true');
+            liveRegion.style.position = 'absolute';
+            liveRegion.style.left = '-10000px';
+            liveRegion.style.width = '1px';
+            liveRegion.style.height = '1px';
+            liveRegion.style.overflow = 'hidden';
+            document.body.appendChild(liveRegion);
+        }
+
+        const currentSlideElement = this.slides[this.currentSlide];
+        const internName = currentSlideElement?.querySelector('.intern-name')?.textContent || '';
+        const internPosition = currentSlideElement?.querySelector('.intern-position')?.textContent || '';
+        
+        liveRegion.textContent = `Testimonial ${this.currentSlide + 1} of ${this.totalSlides}: ${internName}, ${internPosition}`;
+    }
+
+    // Public method to destroy the slider (useful for cleanup)
+    destroy() {
+        this.stopAutoSlide();
+        
+        // Remove event listeners
+        this.nextBtn?.removeEventListener('click', this.handleNavigation);
+        this.prevBtn?.removeEventListener('click', this.handleNavigation);
+        
+        this.dots.forEach(dot => {
+            dot.removeEventListener('click', this.handleNavigation);
+            dot.removeEventListener('keydown', this.handleKeyboardNavigation);
+        });
+
+        // Clean up ARIA live region
+        const liveRegion = document.getElementById('slider-live-region');
+        if (liveRegion) {
+            liveRegion.remove();
+        }
+    }
+}
+
+// Initialize the slider when DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
+    const slider = new TestimonialSlider();
+    
+    // Make slider globally available for debugging
+    window.testimonialSlider = slider;
+});
+
+// Handle page unload
+window.addEventListener('beforeunload', () => {
+    if (window.testimonialSlider) {
+        window.testimonialSlider.destroy();
+    }
+});
+
+// Intersection Observer for performance optimization
+if ('IntersectionObserver' in window) {
+    const sliderObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.target.classList.contains('slider-container')) {
+                if (entry.isIntersecting) {
+                    window.testimonialSlider?.startAutoSlide();
+                } else {
+                    window.testimonialSlider?.stopAutoSlide();
+                }
+            }
+        });
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const sliderContainer = document.querySelector('.slider-container');
+        if (sliderContainer) {
+            sliderObserver.observe(sliderContainer);
+        }
+    });
+}
+        </script>
+    </section>
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2 class="section-title">Get in Touch</h2>
+                    <p class="contact-description">Have questions about our internship program? We're here to help!</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Office Address</h4>
+                                <p>Pune<br>Maharashtra, India - 411012 </p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+91 9403701424</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>3svpvtltd@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Working Hours</h4>
+                                <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="internship" name="internship" required>
+                                <option value="">Select Internship Interest</option>
+                                <option value="frontend">Frontend Development</option>
+                                <option value="backend">Backend Development</option>
+                                <option value="mobile">Mobile App Development</option>
+                                <option value="data-science">Data Science & Analytics</option>
+                                <option value="cybersecurity">Cybersecurity</option>
+                                <option value="ui-ux">UI/UX Design</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Tell us about yourself and why you're interested in this internship" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <i class="fas fa-code brand-icon"></i>
+                        <span class="brand-text">3SV Software Solutions</span>
+                    </div>
+                    <p class="footer-description">Empowering the next generation of software developers through comprehensive internship programs.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#internships">Internships</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Internship Programs</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Frontend Development</a></li>
+                        <li><a href="#">Backend Development</a></li>
+                        <li><a href="#">AI Prompt Engineer</a></li>
+                        <li><a href="#">Data Science</a></li>
+                        <li><a href="#">Data Engineer</a></li>
+                        <li><a href="#">UI/UX Design</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i>Pune, Maharashtra, India</p>
+                        <p><i class="fas fa-phone"></i> +91 9403701424</p>
+                        <p><i class="fas fa-envelope"></i>3svpvtltd@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 3SV Software Solutions. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Success Message -->
+    <div id="successMessage" class="success-message">
+        <div class="success-content">
+            <i class="fas fa-check-circle"></i>
+            <h3>Application Submitted Successfully!</h3>
+            <p>Thank you for your interest. We'll review your application and get back to you within 3-5 business days.</p>
+            <button onclick="hideSuccessMessage()" class="btn-close-success">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
