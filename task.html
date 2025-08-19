@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerHub - Job Opportunities</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+   /* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f8ecec;
+    min-height: 100vh;
+}
+
+
+/* Jobs Page Styles */
+.jobs-container {
+    min-height: 100vh;
+    background: rgb(248, 244, 244);
+}
+
+.jobs-header {
+    background: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #e2e8f0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.jobs-header .logo h1 {
+    font-size: 1.8rem;
+    color: #2d3748;
+    font-weight: 700;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #4a5568;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.nav-item:hover,
+.nav-item.active {
+    color: #2d3748;
+    background: #f7fafc;
+}
+
+.logout {
+    color: #e53e3e !important;
+}
+
+.logout:hover {
+    background: #fed7d7 !important;
+
+    background: #f8fafc;
+    padding: 60px 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.welcome-content {
+    text-align: center;
+}
+
+.welcome-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #2d3748;
+}
+
+.welcome-content p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #4a5568;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #2d3748;
+}
+
+.stat-label {
+    font-size: 1rem;
+    color: #718096;
+.jobs-section {
+    padding: 40px 0;
+    background: #ffffff;
+}
+}
+
+
+.jobs-footer {
+    background: #f8fafc;
+    color: #4a5568;
+    padding: 50px 0 20px;
+    border-top: 1px solid #e2e8f0;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-section h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #2d3748;
+}
+
+.footer-section p {
+    color: #718096;
+    line-height: 1.6;
+}
+
+.footer-section a {
+    display: block;
+    color: #718096;
+    text-decoration: none;
+    margin-bottom: 8px;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #4a5568;
+}
+
+.footer-bottom {
+    border-top: 1px solid #e2e8f0;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #718096;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .verification-card {
+        padding: 30px 25px;
+        margin: 20px;
+    }
+
+    .logo h1 {
+        font-size: 2.2rem;
+    }
+
+    .welcome-content h2 {
+        font-size: 2rem;
+    }
+
+    .stats {
+        gap: 30px;
+    }
+
+    .filters {
+        flex-direction: column;
+    }
+
+    .jobs-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-menu {
+        gap: 15px;
+    }
+
+    .nav-item {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+    }
+
+    .header-content {
+        height: 60px;
+    }
+
+    .jobs-header .logo h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .verification-card {
+        padding: 25px 20px;
+    }
+
+    .card-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .welcome-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .job-card {
+        padding: 20px;
+    }
+
+    .stats {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+
+
+
+/* Internship Tasks Section */
+.internship-tasks {
+  padding: 4rem 0;
+  background-color: rgb(248, 244, 244);
+}
+
+.internship-tasks h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: black;
+}
+
+.section-description {
+  text-align: center;
+  color: rgb(22, 21, 21);
+  max-width: 600px;
+  margin: 0 auto 3rem;
+}
+
+.tasks-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.task-card {
+  background-color: rgb(231, 229, 233);
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.task-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.task-icon {
+  width: 4rem;
+  height: 4rem;
+  background-color:  rgb(244, 243, 246);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.task-icon i {
+  font-size: 2rem;
+  color: rgb(6, 6, 6);
+}
+
+.task-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-dark);
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgb(247, 242, 242);
+  margin-bottom: 0.75rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.task-list li:hover {
+  background-color: rgba(59, 130, 246, 0.05);
+}
+
+.task-list li:last-child {
+  margin-bottom: 0;
+}
+
+.task-list li span {
+  font-weight: 500;
+  color: black;
+}
+
+.download-btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color:  rgb(247, 242, 242);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(10, 10, 10);
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: rgb(233, 63, 63);
+}
+
+.download-btn i {
+  font-size: 1rem;
+}
+
+    </style>
+</head>
+<body>
+    <div class="jobs-container">
+        <!-- Navigation Header -->
+        <header class="jobs-header">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>3SV CareerHub</h1>
+                </div>
+                <nav class="nav-menu">
+                    
+                    <a href="index.html" class="nav-item logout">Logout</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Welcome Section -->
+        <section class="welcome-section">
+            <div class="container">
+                <div class="welcome-content">
+                    <h2>Welcome to Your Career Journey!</h2>
+                    <p>Internship task: Download, organize, and manage assigned digital resources efficiently.</p>
+                    <div class="stats">
+                      
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+    <!-- Internship Tasks Section -->
+<section class="internship-tasks">
+  <div class="container">
+    <h2>Internship Tasks</h2>
+    <p class="section-description">Download your domain-specific tasks and start your learning journey</p>
+    
+    <div class="tasks-grid">
+      <!-- Web Development Tasks -->
+      <div class="task-card">
+        <div class="task-icon">
+          <i class="fas fa-laptop-code"></i>
+        </div>
+        <h3>Web Development</h3>
+        <ul class="task-list">
+          <li>
+            <span>Task 1:</span>
+            <button class="download-btn" data-file="webdev.pdf">
+              <i class="fas fa-download"></i>
+            </button>
+          </li>
+          <li>
+            <span>Task 2:</span>
+            <button class="download-btn" data-file="pdfs/backend.pdf">
+              <i class="fas fa-download"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Backend Development Tasks -->
+      <div class="task-card">
+        <div class="task-icon">
+          <i class="fas fa-laptop-code"></i>
+        </div>
+        <h3>Backend Development</h3>
+        <ul class="task-list">
+          <li>
+            <span>Task 1: </span>
+            <button class="download-btn" data-file="pdfs/mobile-ui.pdf">
+              <i class="fas fa-download"></i>
+            </button>
+          </li>
+          <li>
+            <span>Task 2:</span>
+            <button class="download-btn" data-file="pdfs/app-dev.pdf">
+              <i class="fas fa-download"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <!-- UI/UX Design Tasks -->
+      <div class="task-card">
+        <div class="task-icon">
+          <i class="fas fa-paint-brush"></i>
+        </div>
+        <h3>UI/UX Design</h3>
+        <ul class="task-list">
+          <li>
+            <span>Task 1: </span>
+            <button class="download-btn" data-file="pdfs/ui-design.pdf">
+              <i class="fas fa-download"></i>
+            </button>
+          </li>
+          <li>
+            <span>Task 2: </span>
+            <button class="download-btn" data-file="pdfs/ux-research.pdf">
+              <i class="fas fa-download"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Data Science Tasks -->
+      <div class="task-card">
+        <div class="task-icon">
+          <i class="fas fa-chart-bar"></i>
+        </div>
+        <h3>Data Science</h3>
+        <ul class="task-list">
+          <li>
+            <span>Task 1: </span>
+            <button class="download-btn" data-file="pdfs/data-analysis.pdf">
+              <i class="fas fa-download"></i>
+            </button>
+          </li>
+          <li>
+            <span>Task 2: </span>
+            <button class="download-btn" data-file="pdfs/machine-learning.pdf">
+              <i class="fas fa-download"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <!-- python Tasks -->
+      <div class="task-card">
+        <div class="task-icon">
+          <i class="fas fa-bullhorn"></i>
+        </div>
+        <h3>Python Developer</h3>
+        <ul class="task-list">
+          <li>
+            <span>Task 1: </span>
+            <button class="download-btn" data-file="pdfs/digital-marketing.pdf">
+              <i class="fas fa-download"></i>
+            </button>
+          </li>
+          <li>
+            <span>Task 2:</span>
+            <button class="download-btn" data-file="pdfs/content-strategy.pdf">
+              <i class="fas fa-download"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+         <!-- Frontend Tasks -->
+      <div class="task-card">
+        <div class="task-icon">
+          <i class="fas fa-chart-bar"></i>
+        </div>
+        <h3>Frontend Developer</h3>
+        <ul class="task-list">
+          <li>
+            <span>Task 1: </span>
+            <button class="download-btn" data-file="pdfs/data-analysis.pdf">
+              <i class="fas fa-download"></i>
+            </button>
+          </li>
+          <li>
+            <span>Task 2: </span>
+            <button class="download-btn" data-file="pdfs/machine-learning.pdf">
+              <i class="fas fa-download"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+         <!-- AI Prompt Tasks -->
+      <div class="task-card">
+        <div class="task-icon">
+          <i class="fas fa-chart-bar"></i>
+        </div>
+        <h3>AI Prompt Empowering</h3>
+        <ul class="task-list">
+          <li>
+            <span>Task 1: </span>
+            <button class="download-btn" data-file="pdfs/data-analysis.pdf">
+              <i class="fas fa-download"></i>
+            </button>
+          </li>
+          <li>
+            <span>Task 2: </span>
+            <button class="download-btn" data-file="pdfs/machine-learning.pdf">
+              <i class="fas fa-download"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+         <!-- Generative AI Tasks -->
+      <div class="task-card">
+        <div class="task-icon">
+          <i class="fas fa-chart-bar"></i>
+        </div>
+        <h3>Generative AI </h3>
+        <ul class="task-list">
+          <li>
+            <span>Task 1: </span>
+            <button class="download-btn" data-file="pdfs/data-analysis.pdf">
+              <i class="fas fa-download"></i>
+            </button>
+          </li>
+          <li>
+            <span>Task 2: </span>
+            <button class="download-btn" data-file="pdfs/machine-learning.pdf">
+              <i class="fas fa-download"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+         <!-- Data Engineer Tasks -->
+      <div class="task-card">
+        <div class="task-icon">
+          <i class="fas fa-chart-bar"></i>
+        </div>
+        <h3>Data Engineer</h3>
+        <ul class="task-list">
+          <li>
+            <span>Task 1: </span>
+            <button class="download-btn" data-file="pdfs/data-analysis.pdf">
+              <i class="fas fa-download"></i>
+            </button>
+          </li>
+          <li>
+            <span>Task 2: </span>
+            <button class="download-btn" data-file="pdfs/machine-learning.pdf">
+              <i class="fas fa-download"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.querySelectorAll('.download-btn').forEach(button => {
+    button.addEventListener('click', function() {
+      const fileUrl = this.getAttribute('data-file');
+      const link = document.createElement('a');
+      link.href = fileUrl;
+      link.setAttribute('download', '');
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    });
+  });
+</script>
+
+
+        <!-- Footer -->
+        <footer class="jobs-footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h4>3SV CareerHub</h4>
+                        <p>Connecting talent with opportunity</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <a href="index.html">About Us</a>
+                        <a href="index.html">Contact</a>
+                        <a href="index.html">Privacy Policy</a>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Support</h4>
+                        <a href="index.html">Help Center</a>
+                        <a href="index.html">FAQs</a>
+                        <a href="index.html">Terms of Service</a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 3SV CareerHub. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Jobs Page Script
+document.addEventListener('DOMContentLoaded', function() {
+    // Check if user is verified
+    const verifiedCertificate = localStorage.getItem('verifiedCertificate');
+    if (!verifiedCertificate) {
+        window.location.href = 'task.html';
+        return;
+    }
+    // Sample job data
+    const jobsData = [
+        {
+            id: 1,
+            
+        },
+        ];
+
+    let filteredJobs = [...jobsData];
+
+
+  
+    // DOM Elements
+    const jobsGrid = document.getElementById('jobsGrid');
+
+    // Initialize page
+    renderJobs(filteredJobs);
+    setupEventListeners();
+
+    function renderJobs(jobs) {
+        if (jobs.length === 0) {
+            jobsGrid.innerHTML = `
+                <div style="grid-column: 1 / -1; text-align: center; padding: 60px 20px;">
+                    <h3 style="color: #4a5568; margin-bottom: 10px;">No jobs found</h3>
+                    <p style="color: #718096;">Try adjusting your filters to see more opportunities.</p>
+                </div>
+            `;
+            return;
+        }
+
+        jobsGrid.innerHTML = jobs.map((job, index) => `
+            <div class="job-card" style="animation-delay: ${(index * 0.1)}s">
+                <div class="job-header">
+                    <div class="company-logo">${job.logo}</div>
+                    <div class="job-info">
+                        <h3>${job.title}</h3>
+                        <div class="company-name">${job.company}</div>
+                    </div>
+                </div>
+                
+                <div class="job-meta">
+                    <div class="meta-item">
+                        <span>📍</span>
+                        <span>${job.location}</span>
+                    </div>
+                    <div class="meta-item">
+                        <span>💼</span>
+                        <span>${job.type}</span>
+                    </div>
+                    <div class="meta-item">
+                        <span>⭐</span>
+                        <span>${job.experience}</span>
+                    </div>
+                </div>
+                
+                <div class="job-description">
+                    ${job.description}
+                </div>
+                
+                <div class="job-tags">
+                    ${job.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+                </div>
+                
+                <div class="job-footer">
+                    <div class="salary">${job.salary}</div>
+                    <button class="apply-btn" onclick="applyToJob(${job.id})">Apply Now</button>
+                </div>
+            </div>
+        `).join('');
+    }
+
+    function setupEventListeners() {
+        // Logout functionality
+        document.querySelector('.logout').addEventListener('click', function(e) {
+            e.preventDefault();
+            if (confirm('Are you sure you want to logout?')) {
+                localStorage.removeItem('verifiedCertificate');
+                localStorage.removeItem('verificationTime');
+                window.location.href = 'index.html';
+            }
+        });
+    }
+
+    // Global function for apply button
+    window.applyToJob = function(jobId) {
+        const job = jobsData.find(j => j.id === jobId);
+        if (job) {
+            // Create application modal or redirect
+            showApplicationModal(job);
+        }
+    };
+
+    function showApplicationModal(job) {
+        // Create modal
+        const modal = document.createElement('div');
+        modal.style.cssText = `
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            backdrop-filter: blur(5px);
+        `;
+
+        modal.innerHTML = `
+            <div style="
+                background: white;
+                padding: 40px;
+                border-radius: 15px;
+                max-width: 500px;
+                width: 90%;
+                text-align: center;
+                position: relative;
+                box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            ">
+                <button onclick="this.closest('.modal').remove()" style="
+                    position: absolute;
+                    top: 15px;
+                    right: 20px;
+                    background: none;
+                    border: none;
+                    font-size: 24px;
+                    cursor: pointer;
+                    color: #718096;
+                ">×</button>
+                
+                <div style="
+                    width: 80px;
+                    height: 80px;
+                    background: linear-gradient(135deg, #667eea, #764ba2);
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0 auto 20px;
+                    color: white;
+                    font-size: 2rem;
+                ">🎉</div>
+                
+                <h3 style="color: #2d3748; margin-bottom: 10px; font-size: 1.5rem;">Application Submitted!</h3>
+                <p style="color: #718096; margin-bottom: 20px;">
+                    Your application for <strong>${job.title}</strong> at <strong>${job.company}</strong> has been submitted successfully.
+                </p>
+                <p style="color: #4a5568; font-size: 0.9rem; margin-bottom: 25px;">
+                    We'll notify you within 2-3 business days about the next steps.
+                </p>
+                
+                <button onclick="this.closest('.modal').remove()" style="
+                    background: linear-gradient(135deg, #667eea, #764ba2);
+                    color: white;
+                    border: none;
+                    padding: 12px 30px;
+                    border-radius: 8px;
+                    font-weight: 600;
+                    cursor: pointer;
+                    font-size: 1rem;
+                ">Continue Browsing</button>
+            </div>
+        `;
+
+        modal.className = 'modal';
+        document.body.appendChild(modal);
+
+        // Close on backdrop click
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                modal.remove();
+            }
+        });
+
+        // Add success animation
+        setTimeout(() => {
+            const modalContent = modal.querySelector('div');
+            modalContent.style.transform = 'scale(1)';
+            modalContent.style.opacity = '1';
+        }, 100);
+
+        // Auto-remove after 10 seconds
+        setTimeout(() => {
+            if (document.body.contains(modal)) {
+                modal.remove();
+            }
+        }, 10000);
+    }
+
+    // Add some interactive enhancements
+    document.addEventListener('scroll', function() {
+        const header = document.querySelector('.jobs-header');
+        if (window.scrollY > 100) {
+            header.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.15)';
+        } else {
+            header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+        }
+    });
+
+    // Update stats dynamically
+    function updateStats() {
+        const statNumbers = document.querySelectorAll('.stat-number');
+        const totalJobs = jobsData.length;
+        const companies = new Set(jobsData.map(job => job.company)).size;
+        
+        if (statNumbers.length >= 3) {
+            statNumbers[0].textContent = totalJobs + '+';
+            statNumbers[1].textContent = companies + '+';
+        }
+    }
+
+    // Initial stats update
+    updateStats();
+
+    // Welcome message with certificate info
+    setTimeout(() => {
+        const welcomeSection = document.querySelector('.welcome-content p');
+        if (welcomeSection && verifiedCertificate) {
+            welcomeSection.innerHTML += `<br><small style="opacity: 0.8;">Certificate ID: ${verifiedCertificate}</small>`;
+        }
+    }, 1000);
+});
+    </script>
+</body>
+</html>
