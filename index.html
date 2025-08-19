@@ -19,6 +19,7 @@
                 <a href="#home" class="nav-link">Home</a>
                 <a href="#internships" class="nav-link">Internships</a>
                 <a href="job-veri.html" class="nav-link">Jobs</a>
+                <a href="veritask.html" class="nav-link">Tasks</a>
                 <a href="#about" class="nav-link">About</a>
                 <a href="https://3sv-certificate-verification.netlify.app/" class="nav-link">Certificate Verification</a>
                 <a href="#contact" class="nav-link">Contact</a>
@@ -485,139 +486,7 @@
     </section>
 
 
-    <!-- Internship Tasks Section -->
-<section class="internship-tasks">
-  <div class="container">
-    <h2>Internship Tasks</h2>
-    <p class="section-description">Download your domain-specific tasks and start your learning journey</p>
     
-    <div class="tasks-grid">
-      <!-- Web Development Tasks -->
-      <div class="task-card">
-        <div class="task-icon">
-          <i class="fas fa-laptop-code"></i>
-        </div>
-        <h3>Web Development</h3>
-        <ul class="task-list">
-          <li>
-            <span>Task 1:</span>
-            <button class="download-btn" data-file="webdev_task1.pdf">
-              <i class="fas fa-download"></i>
-            </button>
-          </li>
-          <li>
-            <span>Task 2:</span>
-            <button class="download-btn" data-file="web_task2.pdf">
-              <i class="fas fa-download"></i>
-            </button>
-          </li>
-        </ul>
-      </div>
-
-      <!-- Backend Development Tasks -->
-      <div class="task-card">
-        <div class="task-icon">
-          <i class="fas fa-mobile-alt"></i>
-        </div>
-        <h3>Backend Development</h3>
-        <ul class="task-list">
-          <li>
-            <span>Task 1:</span>
-            <button class="download-btn" data-file="back_task1.pdf">
-              <i class="fas fa-download"></i>
-            </button>
-          </li>
-          <li>
-            <span>Task 2:</span>
-            <button class="download-btn" data-file="back_task2.pdf">
-              <i class="fas fa-download"></i>
-            </button>
-          </li>
-        </ul>
-      </div>
-
-      <!-- Python Tasks -->
-      <div class="task-card">
-        <div class="task-icon">
-          <i class="fas fa-paint-brush"></i>
-        </div>
-        <h3>Python Developer </h3>
-        <ul class="task-list">
-          <li>
-            <span>Task 1: </span>
-            <button class="download-btn" data-file="py_task1.pdf">
-              <i class="fas fa-download"></i>
-            </button>
-          </li>
-          <li>
-            <span>Task 2:</span>
-            <button class="download-btn" data-file="Py_task2.pdf">
-              <i class="fas fa-download"></i>
-            </button>
-          </li>
-        </ul>
-      </div>
-
-      <!-- Data Science Tasks -->
-      <div class="task-card">
-        <div class="task-icon">
-          <i class="fas fa-chart-bar"></i>
-        </div>
-        <h3>Data Science </h3>
-        <ul class="task-list">
-          <li>
-            <span>Task 1: Data Analysis</span>
-            <button class="download-btn" data-file="data1.pdf">
-              <i class="fas fa-download"></i>
-            </button>
-          </li>
-          <li>
-            <span>Task 2: </span>
-            <button class="download-btn" data-file="pdfs/machine-learning.pdf">
-              <i class="fas fa-download"></i>
-            </button>
-          </li>
-        </ul>
-      </div>
-
-      <!-- Frontend Tasks -->
-      <div class="task-card">
-        <div class="task-icon">
-          <i class="fas fa-bullhorn"></i>
-        </div>
-        <h3>Frontend Developer</h3>
-        <ul class="task-list">
-          <li>
-            <span>Task 1: </span>
-            <button class="download-btn" data-file="front_task1.pdf">
-              <i class="fas fa-download"></i>
-            </button>
-          </li>
-          <li>
-            <span>Task 2: </span>
-            <button class="download-btn" data-file="front_task2.pdf">
-              <i class="fas fa-download"></i>
-            </button>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<script>
-  document.querySelectorAll('.download-btn').forEach(button => {
-    button.addEventListener('click', function() {
-      const fileUrl = this.getAttribute('data-file');
-      const link = document.createElement('a');
-      link.href = fileUrl;
-      link.setAttribute('download', '');
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    });
-  });
-</script>
 
 
 
@@ -1298,5 +1167,6 @@ if ('IntersectionObserver' in window) {
 </body>
 
 </html>
+
 
 
