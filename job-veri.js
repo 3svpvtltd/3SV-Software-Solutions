@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Valid certificate IDs for demonstration
     const validCertificates = [
-        'CERT2024-001',
+        '3SV2025002',
         'CERT2024-002', 
         'CERT2024-003',
         '3SV2025001',
@@ -156,4 +156,5 @@ document.addEventListener('DOMContentLoaded', function() {
             clickCount = 0;
         }, 1000);
     });
+
 });
