@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const validCertificates = [
         '3SV2025002',
         'CERT2024-002', 
-        'CERT2024-003',
         '3SV2025001',
         '3SV2025011',
         '3SV2025012',
