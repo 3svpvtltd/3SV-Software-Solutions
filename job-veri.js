@@ -9,14 +9,12 @@ document.addEventListener('DOMContentLoaded', function() {
     // Valid certificate IDs for demonstration
     const validCertificates = [
         '3SV2025002',
-        'CERT2024-002', 
         '3SV2025001',
         '3SV2025011',
         '3SV2025012',
         '3SV2025013',
         '3SV2025265',
-        '3SV2026301',
-        'FINANCE2024-001'
+        '3SV2026301'
     ];
 
     // Real-time input formatting
